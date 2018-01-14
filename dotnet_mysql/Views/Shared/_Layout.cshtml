@@ -26,7 +26,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Hellooo dotnet_mysql</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    <environment names="Localhost">dotnet_mysql (Localhost)</environment>
+                       <environment names="Development">dotnet_mysql (Development)</environment>
+                       <environment names="Uat">dotnet_mysql (Production)</environment>
+                       <environment names="Production">dotnet_mysql (Production)</environment>
+                    </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

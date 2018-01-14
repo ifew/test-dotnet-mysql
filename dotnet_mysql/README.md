@@ -17,3 +17,18 @@
 
 ## UAT
 ``docker run -p 5100:5000 -e ASPNETCORE_ENVIRONMENT=Uat -name dotnet_mysql_webuat dotnet_mysql_web``
+
+
+# RUN
+
+Run as Localhost 
+``ASPNETCORE_ENVIRONMENT=Localhost dotnet run``
+
+Run as Development 
+``ASPNETCORE_ENVIRONMENT=Development dotnet run``
+
+Run as Uat 
+``ASPNETCORE_ENVIRONMENT=Uat dotnet run``
+
+Run as Production 
+``dotnet run``
